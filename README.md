@@ -23,5 +23,6 @@ This project implements a hybrid Intrusion Detection System (IDS) using a combin
 
 5. **Advanced Analysis with Transformers**
    - If an activity is still undetected, it moves to the final analysis phase, which uses transformer-based models for advanced anomaly detection.
+   - Before feeding data into the transformer, SMOTE is applied to balance the dataset by generating synthetic samples, ensuring the model effectively learns from minority-class anomalies. 
    - Transformers are leveraged to analyze intricate patterns in network traffic, improving detection accuracy for previously unseen threats.
 
